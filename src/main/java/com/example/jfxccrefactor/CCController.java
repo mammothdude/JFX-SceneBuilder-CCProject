@@ -42,24 +42,24 @@ public class CCController {
         boolean b4 = m4.matches();
 
         if (b1 == true) {
-            cc_image.setImage(new Image("https://www.freeiconspng.com/thumbs/visa-icon/visa-icon-0.png"));
-            yn.setImage(new Image("https://www.shareicon.net/data/256x256/2016/08/20/817720_check_395x512.png"));
+            cc_image.setImage(new Image("visa.png"));
+            yn.setImage(new Image("greencheck.png"));
             sec.setText("###");
         } else if (b2 == true) {
-            cc_image.setImage(new Image("https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/American-Express-icon.png"));
-            yn.setImage(new Image("https://www.shareicon.net/data/256x256/2016/08/20/817720_check_395x512.png"));
+            cc_image.setImage(new Image("amex.png"));
+            yn.setImage(new Image("greencheck.png"));
             sec.setText("####");
         } else if (b3 == true) {
-            cc_image.setImage(new Image("https://cdn.iconscout.com/icon/free/png-256/jcb-credit-debit-card-bank-transaction-32305.png"));
-            yn.setImage(new Image("https://www.shareicon.net/data/256x256/2016/08/20/817720_check_395x512.png"));
+            cc_image.setImage(new Image("jcb.png"));
+            yn.setImage(new Image("greencheck.png"));
             sec.setText("###");
         } else if (b4 == true) {
-            cc_image.setImage(new Image("https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-Blue-icon.png"));
-            yn.setImage(new Image("https://www.shareicon.net/data/256x256/2016/08/20/817720_check_395x512.png"));
+            cc_image.setImage(new Image("mc.png"));
+            yn.setImage(new Image("greencheck.png"));
             sec.setText("###");
         } else {
-            cc_image.setImage(new Image("https://icons.veryicon.com/png/System/iOS7%20Minimal/Shopping%20Credit%20card.png"));
-            yn.setImage(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1200px-Flat_cross_icon.svg.png"));
+            cc_image.setImage(new Image("blankcc.png"));
+            yn.setImage(new Image("red-x.png"));
             ccn.setText("Invalid Card #");
             sec.setText("");
         }
