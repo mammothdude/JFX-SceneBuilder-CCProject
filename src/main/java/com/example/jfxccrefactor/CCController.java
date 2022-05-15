@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CCController {
-    @FXML                           //there should be a way to group these
+    @FXML                                                   //there should be a way to group these
     private TextField ccn;
     @FXML
     private TextField sec;
@@ -42,8 +42,8 @@ public class CCController {
         boolean b4 = m4.matches();
 
         if (b1 == true) {
-            cc_image.setImage(new Image("visa.png"));
-            yn.setImage(new Image("greencheck.png"));
+            cc_image.setImage(new Image("visa.png"));       //images need to be in the src/main/resources folder
+            yn.setImage(new Image("greencheck.png"));       //and not in a subfolder
             sec.setText("###");
         } else if (b2 == true) {
             cc_image.setImage(new Image("amex.png"));
